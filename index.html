@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COVID-19 Narrative Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>A Narrative of Global COVID-19 Cases</h1>
+  <p style="text-align: center; max-width: 800px; margin: 10px auto; font-size: 1rem;">
+    This visualization explores the global spread of COVID-19 from 2020 to 2024.
+    It begins with a worldwide overview, followed by a geographic breakdown, and finally lets you explore individual countries in detail.
+  </p>
+
+  <h2>1. Global COVID-19 Confirmed Cases Over Time</h2>
+  <div id="vis"></div>
+
+  <h2 id="map-title">2. Global Cases by Country</h2>
+  <div id="dateControl">
+    <label><strong>Pick a date:</strong></label>
+    <input type="date" id="datePicker" value="2023-03-09">
+  </div>
+  <p style="text-align: center; font-size: 0.95rem; margin-bottom: 20px;">
+    Click on a country to view its COVID-19 trend in the chart below.
+  </p>
+  <div id="map"></div>
+
+  <h2 id="trend-title">3. Confirmed Cases Trend in Selected Country</h2>
+  <div id="countrySelect">
+    <label><strong>Select a country:</strong></label>
+    <select id="countryDropdown"></select>
+  </div>
+  <div id="countryTrend"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
